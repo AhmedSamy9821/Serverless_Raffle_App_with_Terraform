@@ -23,7 +23,7 @@ The project is modularized for flexibility and scalability:
 ## Architecture Diagrams
 
 - **Development Environment Architecture**: ![Development Environment](dev_env_arch.drawio.png)
-- **Production Environment Architecture**: ![Production Environment](prod_env_arch.png)
+- **Production Environment Architecture**: ![Production Environment](Prod_env_arch.png)
 
 ## Setup and Usage
 
@@ -49,10 +49,12 @@ The project is modularized for flexibility and scalability:
 4. **Select a Workspace**:
    - For development:
      ```bash
+     terraform workspace new dev
      terraform workspace select dev
      ```
    - For production:
      ```bash
+     terraform workspace new prod
      terraform workspace select prod
      ```
 
@@ -69,5 +71,5 @@ The project is modularized for flexibility and scalability:
 
 ## Architecture Overview
 
-- **Development Environment**: The development environment is designed to showcase the app's features without global distribution, using local resources.
+- **Development Environment**: The development environment is designed to showcase the app's features without global distribution.
 - **Production Environment**: The production environment is globally distributed using CloudFront, ensuring users from any location can access the app efficiently.
